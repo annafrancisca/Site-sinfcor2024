@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Aldrich", sans-serif;
+    /* background-color: #292828; */
+}
+
+body{
+    background-color: #292828;
+}
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* estilo do header */
+header{
+    width: 100%;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header .menu nav ul{
+    list-style-type: none;
+}
+
+header .menu nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    z-index: 1;
+}
+
+header .menu nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+/* animaçao */
+.nav-link{
+    position: relative;
+}
+.nav-link::after{
+    content: " ";
+    height: 1px;
+    width: 0%;
+    background-color: #fff;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s ease-in-out;
+
+}
+
+.nav-link:hover::after{
+    width: 110%;
+}
+header .btn-cadastro button{
+    color: #fff;
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #D61CDA;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px 0px #0000002b;
+}
+
+/*main inicio*/
+.home{
+    display: flex;
+    width: 1535px; /*ajustar com a imagem do banner*/
+    height: 500px; /*ajustar c a imagem do banner*/
+    background-color: #292828;
+}
+
+.btn-inscreva{
+    align-items: center;
+    margin-top: 410px;/*ajustar de acordo com imagem do banner e responsividade*/
+}
+
+main .btn-inscreva button{
+    color: #292828;
+    background-color: #fff;
+    border: none;
+    width: 244px;
+    height: 51px;
+    font-size: 21px;
+    cursor: pointer;
+    
+}
+.home .textos-home{
+    align-items: first baseline;
+    margin: 170px 50px;
+    text-align: left;
+}
+
+.home .textos-home h3{
+    color: #fff;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 47px;
+    width: 536px;
+    height: 185px;
+}
+
+.home .textos-home h3 span{
+    color: #fff;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 47px;
+    margin-left: 63px; /*ajustar dps com banner e responsividade*/
+    width: 536px;
+    height: 185px;
+}
+
+.home .textos-home p{
+    color: #fff;
+    font-size: 26px;
+    width: 354px;
+    height: 75px;
+    margin-top: -40px;
+}
+
+.home .textos-home p span{
+    color: #fff;
+    font-size: 25px;
+    width: 354px;
+    height: 75px;
+    margin-left: 17px;
+}
